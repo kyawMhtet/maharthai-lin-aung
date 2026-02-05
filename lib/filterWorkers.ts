@@ -82,8 +82,8 @@ export function sortWorkers(
     
     case "experience":
       return sorted.sort((a, b) => {
-        const aYears = parseInt(a.experience?.split(' ')[0] || '0')
-        const bYears = parseInt(b.experience?.split(' ')[0] || '0')
+        const aYears = parseInt(String(a.experience).split(' ')[0] || '0')
+        const bYears = parseInt(String(b.experience).split(' ')[0] || '0')
         return bYears - aYears
       })
     

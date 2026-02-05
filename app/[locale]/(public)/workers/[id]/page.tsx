@@ -140,7 +140,7 @@ export default function WorkerDetailPage({ params }: PageProps) {
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Sawasdee ka! I have over {worker.experience} of experience as a {worker.role.toLowerCase()} in {worker.location}. I am reliable, hardworking, and love children. I previously worked for a diplomatic family for 4 years, where I honed my skills in maintaining a pristine household and caring for toddlers.
+                    {/* Sawasdee ka! I have over {worker.experience} of experience as a {worker?.role.toLowerCase()} in {worker.location}. I am reliable, hardworking, and love children. I previously worked for a diplomatic family for 4 years, where I honed my skills in maintaining a pristine household and caring for toddlers. */}
                   </p>
                   <p>
                     I can cook authentic Thai food and basic Western dishes. I am fully vaccinated and have a clean background check.
@@ -267,7 +267,7 @@ export default function WorkerDetailPage({ params }: PageProps) {
                   <div className="flex justify-between items-end mb-4 border-b pb-4">
                     <div className="flex flex-col">
                       <span className="text-sm font-medium text-muted-foreground">Daily Rate</span>
-                      <span className="text-2xl font-bold">฿{worker.price.toLocaleString()}</span>
+                      <span className="text-2xl font-bold">฿{worker.price ? worker.price.toLocaleString() : 'N/A'}</span>
                     </div>
                     <div className="flex flex-col items-end">
                       <span className="text-sm font-medium text-muted-foreground">Hourly Rate</span>

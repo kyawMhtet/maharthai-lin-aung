@@ -1,22 +1,28 @@
-export type WorkerCategory =
-  | "nanny"
-  | "maid"
-  | "driver"
-  | "caregiver"
-  | "cook";
-
 export interface Worker {
-    id: number,
-    name: string,
-    role: string,
-    rating: number,
-    reviews: number,
-    price: number,
-    image: string,
-    verified: boolean,
-    experience: string,
-    location: string,
-    availability: string,
-    languages: string[],
-    skills: string[],
+    id: number
+    name: string
+    role: string
+    // optional historical/category fields from older data
+    category?: "nanny" | "maid" | "driver" | "caregiver" | "cook"
+    nationality?: string
+    flag?: string
+
+    // core profile
+    rating: number
+    reviews?: number
+    price?: number
+    image: string
+    verified?: boolean
+
+    // experience can be a number of years or a freeform string like "8 years"
+    experience: string | number
+    location: string
+    // availability used by constants dataset; keep flexible
+    availability?: "Full-time" | "Part-time" | "Live-in" | "Live-out" | string
+
+    // optional fields present in one of the datasets
+    languages?: string[]
+    skills?: string[]
+    bio?: string
+    available?: boolean
 }
