@@ -60,5 +60,26 @@
     "save": "Save",
     "delete": "Delete",
     "edit": "Edit"
+  },
+
+  "worker": {
+    "card": {
+      "verified": "Verified",
+      "reviews": "{count} reviews",
+      "experience": "experience",
+      "startingFrom": "Starting from"
+    },
+    "detail": {
+      "about": "About",
+      "languages": "Languages",
+      "skills": "Skills",
+      "availability": "Availability",
+      "location": "Location",
+      "reviews": "{count} reviews",
+      "bookNow": "Book Now",
+      "contact": "Contact",
+      "rating": "Rating",
+      "noSkills": "No skills listed"
+    }
   }
 }

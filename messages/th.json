@@ -60,5 +60,26 @@
     "save": "บันทึก",
     "delete": "ลบ",
     "edit": "แก้ไข"
+  },
+
+  "worker": {
+    "card": {
+      "verified": "รับรองแล้ว",
+      "reviews": "{count} รีวิว",
+      "experience": "ประสบการณ์",
+      "startingFrom": "เริ่มต้นที่"
+    },
+    "detail": {
+      "about": "เกี่ยวกับ",
+      "languages": "ภาษา",
+      "skills": "ทักษะ",
+      "availability": "ความพร้อมให้บริการ",
+      "location": "สถานที่",
+      "reviews": "{count} รีวิว",
+      "bookNow": "จองตอนนี้",
+      "contact": "ติดต่อ",
+      "rating": "คะแนน",
+      "noSkills": "ไม่มีรายการทักษะ"
+    }
   }
 }
