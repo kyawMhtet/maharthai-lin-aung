@@ -9,13 +9,13 @@ export interface Worker {
 
     // core profile
     rating: number
-    reviews?: number
-    price?: number
+    reviews: number
+    price: number
     image: string
-    verified?: boolean
+    verified: boolean
 
-    // experience can be a number of years or a freeform string like "8 years"
-    experience: string | number
+    // experience as a freeform string like "8 years"
+    experience: string
     location: string
     // availability used by constants dataset; keep flexible
     availability?: "Full-time" | "Part-time" | "Live-in" | "Live-out" | string
