@@ -52,14 +52,14 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ open, onClose }) => {
           {t("services")}
         </Link>
         <Link
-          href="/about"
+          href="/contact"
           className={cn(
             navigationMenuTriggerStyle(),
-            isActive("/about") && "bg-accent text-accent-foreground",
+            isActive("/contact") && "bg-accent text-accent-foreground",
           )}
           onClick={onClose}
         >
-          {t("about")}
+          {t("contact")}
         </Link>
         <Link
           href="/"
