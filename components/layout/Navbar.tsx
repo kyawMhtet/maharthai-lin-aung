@@ -52,7 +52,7 @@ const Navbar = () => {
                     href="/" 
                     className={cn(
                       navigationMenuTriggerStyle(),
-                      isActive('/') && "bg-accent text-accent-foreground"
+                      isActive('/') && "text-primary"
                     )}
                   >
                     {t('home')}
@@ -63,7 +63,7 @@ const Navbar = () => {
                     href="/services" 
                     className={cn(
                       navigationMenuTriggerStyle(),
-                      isActive('/services') && "bg-accent text-accent-foreground"
+                      isActive('/services') && "text-primary"
                     )}
                   >
                     {t('services')}
@@ -71,13 +71,13 @@ const Navbar = () => {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <Link 
-                    href="/about" 
+                    href="/contact" 
                     className={cn(
                       navigationMenuTriggerStyle(),
-                      isActive('/about') && "bg-accent text-accent-foreground"
+                      isActive('/contact') && "text-primary"
                     )}
                   >
-                    {t('about')}
+                    {t('contact')}
                   </Link>
                 </NavigationMenuItem>
 
